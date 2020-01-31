@@ -25,6 +25,7 @@ git diff <file>
 --------------------------------------------------------------------------
 git log
 	--显示从最近到最远的提交日志
+	--英文状态按“q”退出日志
 git log --pretty=oneline
 	--精简输出日志
 git reflog
@@ -65,3 +66,28 @@ git push -u origin master
 	--关联并推送本地库内容到远程库
 git push origin master
 	--把本地master分支的最新修改推送至GitHub
+
+--------------------------------------------------------------------------
+---------------------------------分支使用。-------------------------------
+--------------------------------------------------------------------------
+git branch
+	--查看分支
+git branch <name>
+	--创建分支
+git switch <name>
+	--切换分支
+git switch -c <name>
+	--创建+切换分支
+git merge <name>
+	--合并name分支到当前分支
+git branch -d <name>
+	--删除分支
+git log --graph
+	--查看分支合并图
+
+git stash
+	--保存工作现场
+git stash pop
+	--恢复工作现场
+git cherry-pick <commit>
+	--将 commit(eg:1ad52as) 的修改“复制”到当前分支

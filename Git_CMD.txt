@@ -55,3 +55,13 @@ git restore <file>
     版本库：回退版本   git reset --hard HEAD^
     暂存区：回退工作区 git reset HEAD <file> ->撤销更改 git restore <file>
     工作区：撤销更改   git restore <file>
+
+--------------------------------------------------------------------------
+-------------------关联GitHub远程库并推送本地库内容。---------------------
+--------------------------------------------------------------------------
+git remote add origin git@github.com:Bot-Hu/远程库名称.git
+	--关联GitHub仓库
+git push -u origin master
+	--关联并推送本地库内容到远程库
+git push origin master
+	--把本地master分支的最新修改推送至GitHub
